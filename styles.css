@@ -1,4 +1,5 @@
 #title {
+  margin-top: 50px;
   margin-bottom: 80px;
 }
 
@@ -7,5 +8,20 @@
 }
 
 #random-button {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+#search-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display:none;
+}
+
+.search-item{
+  border: 2px solid black;
+  border-bottom:0;
+}
+
+.search-item:last-of-type{
+  border: 2px solid black;
 }

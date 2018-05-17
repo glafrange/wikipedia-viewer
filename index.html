@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body class="bg bg-dark">
     <div class="container">
       <h1 class="col-sm-4 offset-sm-4 text-center text-light" id="title">Wikipedia Viewer</h1>
-      <button class="col-sm-4 offset-sm-4 btn btn-primary" id="random-button"><a class="text-light" target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">Get Random Article</a></button>
+      <button class="col-sm-4 offset-sm-4 btn btn-secondary" id="random-button"><a class="text-light" target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">Get Random Article</a></button>
       <h3 class="text-light text-center" id="search-title">Search</h3>
-      <input type="text" class="col-sm-4 offset-sm-4" id="search-bar">
+      <input type="text" class="col-sm-4 offset-sm-4 bg bg-dark text-light" id="search-bar">
+      <button class="col-sm-4 offset-sm-4 btn btn-secondary" id="search-button" onclick="searchApi(searchBar.value)">Search</button>
+      <div id="search-list"></div>
     </div>
     
     <script src="app.js"></script>
