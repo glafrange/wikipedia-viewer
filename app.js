@@ -17,7 +17,7 @@ function displaySearch(res) {
     console.log(res);
     searchList.innerHTML = ''
     for(const i in res[1]){
-        searchList.innerHTML += "<div class='search-item'><h1 class='search-header text-light'>" + res[1][i] + "</h1><p class='search-body text-light'>" + res[2][i] + "</p><a class='search-link text-light' target='_blank' href='" + res[3][i] + "'>" + "wiki" + "</a></div>";
+        searchList.innerHTML += "<div class='search-item'><h1 class='search-header color-black'>" + res[1][i] + "</h1><p class='search-body color-black'>" + res[2][i] + "</p><a class='search-link color-black' target='_blank' href='" + res[3][i] + "'>" + "wiki" + "</a></div>";
     }
     searchList.style.display = 'block';
 }
